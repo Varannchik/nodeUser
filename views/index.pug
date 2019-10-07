@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+ 
+  h2 LogIn
+  form(action='/' method='post')
+    input(type='text' name='user' id='user' placeholder='user name')
+    input(type='text' name='pwd' id='pwd' placeholder='password')
+    input(type="submit" value="LogIn")
